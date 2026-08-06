@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vocawiki - 术力口百科全书 | 入口导航</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Vocawiki 是一个开放且专业的术力口（虚拟歌手）百科全书，聚焦虚拟歌手领域，包括歌曲、歌姬、P主、软件、榜单与文化。本页面为 Vocawiki 官方入口导航，收录主站、测试站、状态监测与 GitHub 组织等链接。" />
+  <meta name="keywords" content="Vocawiki,voca.wiki,术力口,ボカロ,虚拟歌手,虚拟歌姬,初音未来,重音Teto,术曲,术力口周榜,VOCALOID,百科,术力口百科全书" />
+  <meta name="author" content="Vocawiki" />
+  <meta name="robots" content="index, follow" />
+  <!-- 仅对 Bing 声明不收录本入口页，避免与主站 voca.wiki 抢排名 -->
+  <meta name="bingbot" content="noindex" />
+  <link rel="canonical" href="https://wecury.github.io/Vocawiki/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Vocawiki 术力口百科全书" />
+  <meta property="og:title" content="Vocawiki - 术力口百科全书 | 入口导航" />
+  <meta property="og:description" content="开放且专业的术力口（虚拟歌手）百科全书：歌曲、歌姬、P主、软件、榜单、文化。本页面为官方入口导航。" />
+  <meta property="og:url" content="https://wecury.github.io/Vocawiki/" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:image" content="https://wecury.github.io/Vocawiki/assets/vocawiki-logo.svg" />
+  <meta property="og:image:alt" content="Vocawiki Logo" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vocawiki - 术力口百科全书" />
+  <meta name="twitter:description" content="开放且专业的术力口（虚拟歌手）百科全书，包含歌曲、歌姬、P主、软件、榜单与文化。" />
+  <meta name="twitter:image" content="https://wecury.github.io/Vocawiki/assets/vocawiki-logo.svg" />
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#00c2c7" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- 结构化数据 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Vocawiki 术力口百科全书",
+    "url": "https://voca.wiki/",
+    "description": "开放且专业的术力口（虚拟歌手）百科全书，包括歌曲、歌手、P主、软件、榜单、文化。",
+    "inLanguage": "zh-CN"
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    // 在首屏渲染前设置主题，避免闪烁：默认浅色，仅当浏览器设定为深色时才用深色
+    (function () {
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (prefersDark) {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- 背景装饰 -->
+  <div class="bg-decor" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- 头部 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="Vocawiki - 术力口百科全书">
+        <span class="brand-logo" aria-hidden="true">
+          <img src="assets/vocawiki-logo-horizontal.svg" alt="" />
+        </span>
+        <span class="brand-wordmark" aria-hidden="true">Vocawiki</span>
+      </a>
+
+      <nav class="site-nav" aria-label="页面导航">
+        <a href="#links">入口</a>
+        <a href="#community">社区</a>
+        <a href="#about">关于</a>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切换深色/浅色模式" title="切换主题">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"/><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454l0 .008"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="hero-eyebrow reveal">开放 · 专业 · 用爱创作</p>
+        <h1 class="hero-title reveal">
+          术力口百科全书
+          <span class="grad-text">Vocawiki</span>
+        </h1>
+        <p class="hero-sub reveal">
+          一个开放且专业的<a href="https://voca.wiki/术力口" target="_blank" rel="noopener">术力口</a>知识库，
+          与维基百科类似，但内容聚焦于虚拟歌手领域 —— 歌曲 · 歌姬 · P主 · 软件 · 榜单 · 文化。
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="https://voca.wiki/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l14 0"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg>
+            前往主站
+          </a>
+          <a class="btn btn-ghost" href="#links">
+            浏览所有入口
+          </a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat"><strong data-count="197995" data-metric="edits">0</strong><span>编辑</span></div>
+          <div class="stat"><strong data-count="13187" data-metric="articles">0</strong><span>条目</span></div>
+          <div class="stat"><strong data-count="306" data-metric="users">0</strong><span>编辑者</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 核心入口 -->
+    <section class="section" id="links">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">核心入口</h2>
+          <p class="section-desc">快速抵达 Vocawiki 的每一个角落</p>
+        </div>
+
+        <div class="card-grid">
+          <!-- 主站 -->
+          <article class="card reveal">
+            <div class="card-icon" style="--icon:#00c2c7">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/><path d="M3.6 9h16.8"/><path d="M3.6 15h16.8"/><path d="M11.5 3a17 17 0 0 0 0 18"/><path d="M12.5 3a17 17 0 0 1 0 18"/></svg>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3>主站</h3>
+                <span class="badge badge-primary">voca.wiki</span>
+              </div>
+              <p class="card-desc">正式站点。查看最新条目、专题推荐，参与编辑与讨论。</p>
+              <a class="card-link" href="https://voca.wiki/" target="_blank" rel="noopener">
+                访问主站
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 7l-10 10"/><path d="M8 7l9 0l0 9"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- 测试站 -->
+          <article class="card reveal">
+            <div class="card-icon" style="--icon:#f5a623">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3l6 0"/><path d="M10 9l4 0"/><path d="M10 3v6l-4 11a.7 .7 0 0 0 .5 1h11a.7 .7 0 0 0 .5 -1l-4 -11v-6"/></svg>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3>测试站</h3>
+                <span class="badge badge-warn">test.voca.wiki</span>
+              </div>
+              <p class="card-desc">反代，部分地区无法访问主站时可从这里进入。</p>
+              <a class="card-link" href="https://test.voca.wiki/" target="_blank" rel="noopener">
+                访问测试站
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 7l-10 10"/><path d="M8 7l9 0l0 9"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- 状态监测 -->
+          <article class="card reveal">
+            <div class="card-icon" style="--icon:#23c55e">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3 8l4 -16l3 8h4"/></svg>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3>状态监测</h3>
+                <span class="badge badge-success">UptimeRobot</span>
+              </div>
+              <p class="card-desc">实时查看主站、测试站及各服务的运行状态与历史可用性。</p>
+              <a class="card-link" href="https://stats.uptimerobot.com/ONmjoKnCt3" target="_blank" rel="noopener">
+                查看监测
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 7l-10 10"/><path d="M8 7l9 0l0 9"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- GitHub 组织 -->
+          <article class="card reveal">
+            <div class="card-icon" style="--icon:#8b5cf6">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"/></svg>
+            </div>
+            <div class="card-body">
+              <div class="card-title-row">
+                <h3>GitHub 仓库</h3>
+                <span class="badge badge-violet">@Vocawiki</span>
+              </div>
+              <p class="card-desc">浏览开源代码、MediaWiki 扩展与工具等仓库，参与贡献或提交 Issue。</p>
+              <a class="card-link" href="https://github.com/Vocawiki" target="_blank" rel="noopener">
+                访问仓库
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 7l-10 10"/><path d="M8 7l9 0l0 9"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 社区与联系 -->
+    <section class="section" id="community">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">社区与联系</h2>
+          <p class="section-desc">加入我们，一起用爱创作</p>
+        </div>
+
+        <div class="community-grid">
+          <a class="community-card reveal" href="https://qm.qq.com/q/MYqLgLko2k" target="_blank" rel="noopener">
+            <span class="community-icon" style="--c:#00c2c7">
+              <svg viewBox="0 0 2094.5 2477.7" width="22" height="26" fill="currentColor" aria-hidden="true">
+                <path d="m1831.6 1032.9c2.3-31.5 4.5-65.3 4.5-96.8 0-517.6-353.3-936.1-789.8-936.1s-789.8 418.5-789.8 936.1c0 33.8 2.3 67.5 4.5 101.3-132.8 265.5-330.8 825.8-236.3 994.6 11.3 20.3 126-90 218.3-265.5 2.3 195.8 101.3 373.5 261 497.3-130.5 22.5-249.8 105.8-240.8 148.5 15.8 72 335.3 87.8 726.8 31.5 2.3 0 4.5 0 9-2.3 15.8 0 31.5 2.3 47.3 2.3s31.5 0 47.3-2.3c2.3 0 4.5 0 9 2.3 393.8 56.3 711.1 40.5 726.8-31.5 9-42.8-110.3-126-240.8-148.5 159.8-123.8 258.8-303.8 261-501.8 90 180 209.3 292.5 220.5 270 94.6-168.8-108-735.9-238.5-999.1z"/>
+              </svg>
+            </span>
+            <div>
+              <h3>QQ 读者群</h3>
+              <p>交流、提问与闲聊</p>
+            </div>
+            <svg class="arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l14 0"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg>
+          </a>
+
+          <a class="community-card reveal" href="https://qm.qq.com/q/joTUo7Z0xW" target="_blank" rel="noopener">
+            <span class="community-icon" style="--c:#ff6ec7">
+              <svg viewBox="0 0 2094.5 2477.7" width="22" height="26" fill="currentColor" aria-hidden="true">
+                <path d="m1831.6 1032.9c2.3-31.5 4.5-65.3 4.5-96.8 0-517.6-353.3-936.1-789.8-936.1s-789.8 418.5-789.8 936.1c0 33.8 2.3 67.5 4.5 101.3-132.8 265.5-330.8 825.8-236.3 994.6 11.3 20.3 126-90 218.3-265.5 2.3 195.8 101.3 373.5 261 497.3-130.5 22.5-249.8 105.8-240.8 148.5 15.8 72 335.3 87.8 726.8 31.5 2.3 0 4.5 0 9-2.3 15.8 0 31.5 2.3 47.3 2.3s31.5 0 47.3-2.3c2.3 0 4.5 0 9 2.3 393.8 56.3 711.1 40.5 726.8-31.5 9-42.8-110.3-126-240.8-148.5 159.8-123.8 258.8-303.8 261-501.8 90 180 209.3 292.5 220.5 270 94.6-168.8-108-735.9-238.5-999.1z"/>
+              </svg>
+            </span>
+            <div>
+              <h3>QQ 编辑群</h3>
+              <p>参与编辑与维护（需先注册账号）</p>
+            </div>
+            <svg class="arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l14 0"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg>
+          </a>
+
+          <a class="community-card reveal" href="https://space.bilibili.com/10003900" target="_blank" rel="noopener">
+            <span class="community-icon" style="--c:#0CB6F2">
+              <svg viewBox="0 0 18 18" width="26" height="26" aria-hidden="true">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.73252 2.67094C3.33229 2.28484 3.33229 1.64373 3.73252 1.25764C4.11291 0.890684 4.71552 0.890684 5.09591 1.25764L7.21723 3.30403C7.27749 3.36218 7.32869 3.4261 7.37081 3.49407H10.5789C10.6211 3.4261 10.6723 3.36218 10.7325 3.30403L12.8538 1.25764C13.2342 0.890684 13.8368 0.890684 14.2172 1.25764C14.6175 1.64373 14.6175 2.28484 14.2172 2.67094L13.364 3.49407H14C16.2091 3.49407 18 5.28493 18 7.49407V12.9996C18 15.2087 16.2091 16.9996 14 16.9996H4C1.79086 16.9996 0 15.2087 0 12.9996V7.49406C0 5.28492 1.79086 3.49407 4 3.49407H4.58579L3.73252 2.67094ZM4 5.42343C2.89543 5.42343 2 6.31886 2 7.42343V13.0702C2 14.1748 2.89543 15.0702 4 15.0702H14C15.1046 15.0702 16 14.1748 16 13.0702V7.42343C16 6.31886 15.1046 5.42343 14 5.42343H4ZM5 9.31747C5 8.76519 5.44772 8.31747 6 8.31747C6.55228 8.31747 7 8.76519 7 9.31747V10.2115C7 10.7638 6.55228 11.2115 6 11.2115C5.44772 11.2115 5 10.7638 5 10.2115V9.31747ZM12 8.31747C11.4477 8.31747 11 8.76519 11 9.31747V10.2115C11 10.7638 11.4477 11.2115 12 11.2115C12.5523 11.2115 13 10.7638 13 10.2115V9.31747C13 8.76519 12.5523 8.31747 12 8.31747Z" fill="#0CB6F2"/>
+              </svg>
+            </span>
+            <div>
+              <h3>哔哩哔哩</h3>
+              <p>官方账号「术力口百科姬」</p>
+            </div>
+            <svg class="arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l14 0"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg>
+          </a>
+
+          <a class="community-card reveal" href="https://www.xiaohongshu.com/user/profile/64d8f0440000000001012022" target="_blank" rel="noopener">
+            <span class="community-icon community-icon-logo" style="--c:#FF2442">
+              <img src="assets/rednote.svg" alt="" class="community-logo" />
+            </span>
+            <div>
+              <h3>小红书</h3>
+              <p>官方账号 · 图文内容</p>
+            </div>
+            <svg class="arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l14 0"/><path d="M13 18l6 -6"/><path d="M13 6l6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 关于 -->
+    <section class="section section-about" id="about">
+      <div class="container">
+        <div class="about-panel reveal">
+          <div class="about-text">
+            <h2 class="section-title"><a href="https://voca.wiki/Vocawiki:%E5%85%B3%E4%BA%8E" target="_blank" rel="noopener">关于 Vocawiki<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 7l-10 10"/><path d="M8 7l9 0l0 9"/></svg></a></h2>
+            <p>
+              Vocawiki 是一个开放且专业的<a href="https://voca.wiki/术力口" target="_blank" rel="noopener">术力口</a>百科全书，
+              由编辑者们用爱创作。我们希望成为最专业的以中文写就的「非中文 / 外文（以日文 VJ 为主）虚拟歌手 wiki」，
+              并打通不同数据渠道之间的界限。
+            </p>
+            <p>本站开放注册，欢迎每一位热爱虚拟歌手的朋友加入 Vocawiki，共同记录与传承术力口文化。</p>
+            <div class="about-actions">
+              <a class="btn btn-ghost" href="https://voca.wiki/Vocawiki:关于" target="_blank" rel="noopener">关于我们</a>
+              <a class="btn btn-ghost" href="https://voca.wiki/Special:CreateAccount" target="_blank" rel="noopener">注册账号</a>
+              <a class="btn btn-ghost" href="https://voca.wiki/Vocawiki:编辑规范" target="_blank" rel="noopener">编辑规范</a>
+            </div>
+          </div>
+          <div class="about-card-deco" aria-hidden="true">
+            <div class="deco-ring"></div>
+            <img src="assets/vocawiki-logo.svg" alt="Vocawiki" width="130" height="130" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>Vocawiki</strong>
+        <span>术力口百科全书 · 入口导航</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://voca.wiki/" target="_blank" rel="noopener">主站</a>
+        <a href="https://test.voca.wiki/" target="_blank" rel="noopener">测试站</a>
+        <a href="https://stats.uptimerobot.com/ONmjoKnCt3" target="_blank" rel="noopener">状态监测</a>
+        <a href="https://github.com/Vocawiki" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p class="footer-meta">
+        本站内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 协议 ·
+        本入口页由社区维护，仅为跳转导航用途
+      </p>
+    </div>
+  </footer>
+
+  <button id="back-top" class="back-top" type="button" aria-label="返回顶部" title="返回顶部">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5l0 14"/><path d="M18 11l-6 -6"/><path d="M6 11l6 -6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

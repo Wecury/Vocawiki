@@ -1,0 +1,7 @@
+User-agent: Bingbot
+Disallow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://wecury.github.io/Vocawiki/sitemap.xml
